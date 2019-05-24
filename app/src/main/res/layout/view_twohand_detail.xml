@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="25dp"
+            android:text="XXXXXXX"
+            android:id="@+id/twohand_detail_type_and_name"
+            android:textColor="#221122"
+            android:maxLines="2"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:id="@+id/twohand_detail_time"
+                android:text="2017年12月23日 12:34:56"
+                android:textColor="#221122"
+                android:textSize="15dp"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView  android:layout_width="match_parent" android:layout_height="10dp"
+        android:alpha="0.45"
+        android:background="@drawable/gap_line_purpose"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:text="详细信息："
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:id="@+id/twohand_detail_describe"
+                android:text="啊啊爱欧冠忙了怕吊牌那个我偶怕的内控ad哦啊打开那个空间按打扑克国际马东平看感到空口岸顶哦啊顶哦阿飞阿飞大公会阿飞"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@drawable/gap_line_purpose" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="价格："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/twohand_detail_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:maxLength="10"
+                android:text="￥124.56"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+        <TextView  android:layout_width="match_parent" android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@drawable/gap_line_purpose"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="联系人："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="牛皮阿飞艾弗"
+                android:textColor="#000000"
+                android:id="@+id/twohand_detail_uname"
+                android:maxLength="6"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+        <TextView  android:layout_width="match_parent" android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@drawable/gap_line_purpose"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="联系电话："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:maxLength="11"
+                android:id="@+id/twohand_detail_tel"
+                android:text="13134545666"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+        <TextView  android:layout_width="match_parent" android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@drawable/gap_line_purpose"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twohand_detail_selflayout"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="更新时间"
+                android:gravity="center"
+                android:id="@+id/twohand_detail_self_update"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="删除"
+                android:gravity="center"
+                android:id="@+id/twohand_detail_self_delete"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

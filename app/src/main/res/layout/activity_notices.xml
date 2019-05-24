@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/pic7"
+    tools:context="com.prave.xjmu.gp.schoolhelper.NoticesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/half_alpha_white"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/notice_rg"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/notice_rb_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:checked="true"
+                android:maxLength="2"
+                android:text="全部" />
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_weight="0.5"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:maxLength="4"
+                android:layout_weight="4.5"
+                android:text="系统通知"
+                android:id="@+id/notice_rb_sys"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:maxLength="4"
+                android:layout_weight="4.5"
+                android:text="教务通知"
+                android:id="@+id/notice_rb_jwc"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+
+            android:id="@+id/notices_listview"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prave.xjmu.gp.schoolhelper">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5c2705ea4d608f942a0bc4d029ec259a" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".HelloViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ForgetPasswordGetCodeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ForgetPasswordSetPasswordActivity"
+            android:theme="@style/AppTheme.ForgetSetNewPWD" />
+        <activity
+            android:name=".AuthTelephoneActivity"
+            android:theme="@style/AppTheme.TeleAuth" />
+        <activity
+            android:name=".LoggedActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MyInfoActivity"
+            android:theme="@style/AppTheme.Info" />
+        <activity
+            android:name=".SchoolCalendarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".NoticesActivity"
+            android:theme="@style/RedTooUgly" />
+        <activity android:name=".TwoHandActivity" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".TwoHandAddActivity" />
+        <activity
+            android:name=".LostFoundActivity"
+            android:theme="@style/RedTooUglyAndNoTitle" />
+        <activity android:name=".LostFoundAddActivity" />
+        <activity
+            android:name=".ScheduleExactActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/ScheduleNoTitleBar" />
+        <activity android:name=".MyChatsActivity"></activity>
+    </application>
+
+</manifest>

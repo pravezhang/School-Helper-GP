@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.Info" parent="AppTheme">
+        <item name="colorPrimary">#AAAACC</item>
+        <item name="colorPrimaryDark">#AAAACC</item>
+        <item name="colorAccent">#AAAACC</item>
+        <item name="android:title">我的个人信息</item>
+    </style>
+
+    <style name="AppTheme.ForgetSetNewPWD" parent="AppTheme">
+        <item name="colorPrimary">#AAAACC</item>
+        <item name="colorPrimaryDark">#AAAACC</item>
+        <item name="colorAccent">#AAAACC</item>
+        <item name="android:title">设置新密码</item>
+    </style>
+
+    <style name="AppTheme.TeleAuth" parent="AppTheme">
+        <item name="colorPrimary">#AAAACC</item>
+        <item name="colorPrimaryDark">#AAAACC</item>
+        <item name="colorAccent">#AAAACC</item>
+        <item name="android:title">绑定手机号</item>
+    </style>
+
+    <style name="RedTooUgly" parent="AppTheme">
+        <item name="colorAccent">#5e96ea</item>
+    </style>
+    <style name="RedTooUglyAndNoTitle" parent="AppTheme">
+        <item name="colorAccent">#5e96ea</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ScheduleNoTitleBar" parent="AppTheme">
+        <item name="colorAccent">#694257</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

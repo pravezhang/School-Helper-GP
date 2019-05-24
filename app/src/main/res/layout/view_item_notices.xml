@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/half_alpha_skyblue"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/item_notice_publisher"
+            android:textAlignment="center"
+            android:textColor="#0d4936"
+            android:text="[教务通知]"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:text=""
+            />
+        <TextView
+            android:layout_width="248dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/item_notice_title"
+            android:textSize="18dp"
+            android:textColor="#111111"
+            android:text="一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/item_notice_time"
+            android:textSize="12dp"
+            android:text="2017年11月11日 12:34:55"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </LinearLayout>
+
+</LinearLayout>

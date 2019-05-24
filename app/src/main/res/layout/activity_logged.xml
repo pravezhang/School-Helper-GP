@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/logged_layout"
+    tools:context="com.prave.xjmu.gp.schoolhelper.LoggedActivity">
+
+    <LinearLayout
+        android:id="@+id/logged_tipscontent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/logged_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您还没有验证并绑定手机号，快来绑定~          "
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/logged_closetips"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/btn_dialog" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/logged_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        >
+
+        <!-- 最左端的小的 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <!-- 第一个按钮 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/navi_func_ing"
+                android:id="@+id/logged_navi_func"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#F66B3C"
+                android:id="@+id/logged_navi_1"
+                android:text="功能大全"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+
+            />
+
+        <!-- 第二个按钮 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/logged_navi_forum"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/navi_forum_ed" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="即时聊天"
+                android:textColor="#BCDD41"
+                android:id="@+id/logged_navi_2"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+                android:id="@+id/logged_navi_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/navi_info_ed" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="我的信息"
+                android:textColor="#2D3E4E"
+                android:id="@+id/logged_navi_3"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

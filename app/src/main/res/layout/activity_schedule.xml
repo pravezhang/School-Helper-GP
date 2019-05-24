@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gold_2"
+    tools:context="com.prave.xjmu.gp.schoolhelper.ScheduleExactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:alpha="0.8"
+        android:background="@drawable/half_alpha_white"
+        android:layout_height="0dp">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:numColumns="2"
+            android:id="@+id/schedule_gv"
+            android:stretchMode="columnWidth"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加课程表"
+            android:textSize="21dp"
+            android:id="@+id/schedule_add"
+            />
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView    android:layout_width="match_parent"    android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/chatting_time"
+            android:textSize="10dp"
+            android:text="2019年10月23日 11:22:33"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+            android:paddingRight="0dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_green"
+            android:paddingLeft="7dp"
+            android:gravity="center"
+            android:paddingRight="7dp"
+            android:paddingTop="6dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:id="@+id/chatting_name"
+                android:text="习近平新时代特色社会主义"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Lv. 1"
+                android:textColor="#000000"
+                android:id="@+id/chatting_level"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:paddingTop="18dp"
+            android:paddingLeft="45dp"
+            android:paddingRight="30dp"
+            android:id="@+id/chatting_word"
+            android:paddingBottom="18dp"
+            android:text="沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放沙发啊嘎嘎沙发发发放"
+            android:maxLines="2"
+            android:scrollbars="vertical"
+            android:layout_weight="4"
+            android:background="@drawable/chatting_bubble_you"
+            android:layout_height="73dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
